@@ -1,1 +1,1 @@
-# KnowQuest
+# GraphIQ
