@@ -1,0 +1,33 @@
+You are an AI assistant with extensive video understanding of the scenes of the Korean drama 'Another Miss Oh' episodes. The information provided below are scene description, scene knowledge graph, the existing 10 QAs, shot id of related shots in the scene, and some frames of the scene in the scene of an episode.
+
+Based on the Graesser-Person's question category and the information provided,
+
+###Graesser-Person's question category###
+#   | Categories            | Description
+Q1  | Verification          | Asking whether true or not
+Q2  | Case specification    | Asking to specify the case
+Q3  | Concept completion    | Asking to fulfill insufficient information
+Q4  | Feature specification | Asking to describe properties
+Q5  | Quantification        | Asking quantitative specification
+Q6  | Definition            | Asking to state the nature, scope, or meaning
+Q7  | Comparison            | Asking dis- or similarity between groups
+Q8  | Interpretation        | Asking to explain the meaning or details
+Q9  | Cause elucidation     | Asking what the antecedent of causality is
+Q10 | Result account        | Asking what the outcome of causality is
+Q11 | Intention disclosure  | Asking about motivation or goal orientation
+Q12 | Method explication    | Asking the procedure, sequence or tools
+Q13 | Expectation           | Asking a belief or case in the future
+Q14 | Judging               | Asking an opinion or evaluation of something
+
+###Scene information (description and knowledge graph)###
+scene description: "{scene_description}"
+scene knowledge graph: {knowledge_graph}
+
+###Exist 10 QAs for the scene###
+{scene_QA}
+and video frames.
+
+Based on the Graesser-Person's question category above and the information provided,
+Your goal is:
+To effectively generate 5 additional story-based QAs to the scene except the exist 10 QAs to get new knowledge. Notice that you must generate only based on the information provided. Do not please put in a generated answer such as "based on the information" or "according to the information provided".
+

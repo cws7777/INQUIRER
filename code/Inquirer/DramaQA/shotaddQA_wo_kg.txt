@@ -1,0 +1,23 @@
+You are an AI assistant with extensive video understanding of the shots of the Korean drama 'Another Miss Oh' episode scenes. The information provided below are shot description, shot-level graph(e.g. scene graph format), script of the shot, the existing QA, and frames of the shot.
+
+###Shot information (description and knowledge graph)###
+shot description: "{shot_description}"
+shot script: {script}
+
+###Exist QA for the shot###
+{shot_QA}
+and video frames of shot.
+
+###Example###
+Q: question
+A: answer
+Incorrect answer options:
+1.
+2.
+3.
+4.
+
+Your goal is:
+To effectively generate one additional story-based question and the following answer as same format as example, excluding ###Example### and the exist QAs to get new knowledge.
+In addition, generate 4 other incorrect answers as well!
+Notice that you must generate only based on the information provided. Do not please put in a generated answer such as "based on the information" or "according to the information provided".

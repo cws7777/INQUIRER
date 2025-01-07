@@ -1,0 +1,37 @@
+You are an AI assistant with extensive video reasoning/understanding of the 'STAR' dataset. The information provided below are scene hypergraphs of a video, the existing QA.
+
+Based on the Graesser-Person's question category and the information provided,
+
+###Graesser-Person's question category###
+#   | Category name         | Description
+Q1  | Verification          | Asking whether true or not
+Q2  | Case specification    | Asking to specify the case
+Q3  | Concept completion    | Asking to fulfill insufficient information
+Q4  | Feature specification | Asking to describe properties
+Q5  | Quantification        | Asking quantitative specification
+Q6  | Definition            | Asking to state the nature, scope, or meaning
+Q7  | Comparison            | Asking dis- or similarity between groups
+Q8  | Interpretation        | Asking to explain the meaning or details
+Q9  | Cause elucidation     | Asking what the antecedent of causality is
+Q10 | Result account        | Asking what the outcome of causality is
+Q11 | Intention disclosure  | Asking about motivation or goal orientation
+Q12 | Method explication    | Asking the procedure, sequence or tools
+Q13 | Expectation           | Asking a belief or case in the future
+Q14 | Judging               | Asking an opinion or evaluation of something
+
+###Existing QA for the video###
+Question: {question}
+Answer: {answer}
+
+###Scene Hypergraph###
+Scene hypergraph: {scene_hypergraph}
+
+Based on the Graesser-Person's question category above and the information provided,
+Your goal is:
+To effectively generate 2 additional questions with 3 plausible but incorrect multiple choices and 1 correct answer, excluding the exist QA to get a new knowledge. Notice that you must generate only based on the information provided. Do not please put in a generated answer such as "based on the information" or "according to the information provided".
+
+
+After generating 2 additional QAs with multiple choices, set those each two additional QAs with the same format as {item}, MUST have "SAME" {question_id} and omit 'situations' key with the value of it.
+Print those out as a list of dictionaries.
+Also, put question category as 'q_type' key and the value which the category is. MUST PUT the value with 'category NAME'!
+
