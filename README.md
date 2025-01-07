@@ -1,1 +1,1 @@
-# GraphIQ
+# INQUIRER
