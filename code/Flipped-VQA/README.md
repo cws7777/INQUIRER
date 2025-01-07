@@ -56,14 +56,6 @@ You can download our preprocessed datasets (NExT-QA, STAR, DramaQA, VLEP and TVQ
 
 ## Training LLaMA-VQA (LLaMA + Flipped-VQA)
 
-### NExT-QA
-
-```
-torchrun --rdzv_endpoint 127.0.0.1:1234 --nproc_per_node 4 train.py --model 7B \
---max_seq_len 128 --batch_size 8 --epochs 5 --warmup_epochs 2 --bias 3.5 --tau 100. --max_feats 10 --dataset nextqa \
---blr 9e-2 --weight_decay 0.14 --output_dir ./checkpoint/nextqa --accum_iter 2 --vaq --qav
-```
-
 ### STAR
 
 ```
@@ -78,14 +70,6 @@ torchrun --rdzv_endpoint 127.0.0.1:1234 --nproc_per_node 4 train.py --model 7B \
 torchrun --rdzv_endpoint 127.0.0.1:1234 --nproc_per_node 4 train.py --model 7B \
 --max_seq_len 384 --batch_size 2 --epochs 5 --warmup_epochs 2 --bias 3 --tau 100. --max_feats 10 --dataset dramaqa \
 --blr 9e-2 --weight_decay 0.10 --output_dir ./checkpoint/dramaqa --accum_iter 8 --vaq --qav
-```
-
-### VLEP
-
-```
-torchrun --rdzv_endpoint 127.0.0.1:1234 --nproc_per_node 4 train.py --model 7B \
---max_seq_len 256 --batch_size 4 --epochs 5 --warmup_epochs 2 --bias 3 --tau 100. --max_feats 10 --dataset vlep \
---blr 6e-2 --weight_decay 0.20 --output_dir ./checkpoint/vlep --accum_iter 8 --sub --qav
 ```
 
 ### TVQA
