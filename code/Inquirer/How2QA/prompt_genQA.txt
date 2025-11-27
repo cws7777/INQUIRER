@@ -1,0 +1,33 @@
+You are an AI assistant with extensive video reasoning/understanding of the 'How2QA' instructional video dataset. The information provided below are the existing QA, a knowledge graph of the video, and subtitle of the video.
+
+###Sample in train set of How2QA###
+Sample: {item}
+
+###Existing QA for the video###
+Question: {question}
+Choices: 
+a0. {a0}
+a1. {a1}
+a2. {a2}
+a3. {a3}
+
+Answer: {answer_id}
+
+###Knowledge graph of the video###
+Knowledge graph: {knowledge_graph}
+
+###Subtitle of the video###
+Subtitle: {all_script}
+
+### Your task is:
+Generate **one new question** with **four multiple-choice options** — 1 correct answer and 3 plausible but incorrect choices — based **only** on the provided information.
+**Do not reference the instructions** (e.g., avoid phrases like "based on the information" or "according to the information provided").
+
+After generating the additional QA:
+- Format it consistently with {item}.
+- Set the values of `{qid}`, `{video_id}`, `{start_t}`, and `{end_t}` **identical** to those in {item}.
+- **Exclude** any keys related to knowledge graph or caption.
+- Output the result as a **list of dictionaries** in valid and consistent JSON format.
+
+Remember:
+- Maintain a consistent structure across all generated responses.
