@@ -2,7 +2,7 @@
 
 <img width="1333" height="533" alt="image" src="https://github.com/user-attachments/assets/a00af011-17e5-4ad2-979f-1195535dd394" />
 
-[Paper](https://www.sciencedirect.com/science/article/pii/S0950705125010780) from Knowledge-Based Systems Journal (IF. 7.6, Q1)
+[Paper](https://www.sciencedirect.com/science/article/pii/S0950705125010780) from [Knowledge-Based Systems Journal](https://www.sciencedirect.com/journal/knowledge-based-systems) (IF. 7.6, Q1)
 
 Authors: [Woo Suk Choi](https://cws7777.github.io/), [Youwon Jang](https://greeksharifa.github.io/about/), [Minsu Lee](https://scholar.google.com/citations?user=75_DkUwAAAAJ), [Byoung-Tak Zhang](https://scholar.google.com/citations?user=sYTUOu8AAAAJ&hl=en)
 
