@@ -13,5 +13,5 @@ To clone the repository
 git clone https://github.com/cws7777/INQUIRER.git
 ```
 
-For downloading datasets for knowledge graphs of DramaQA, TVQA, How2,
+For downloading datasets of knowledge graphs (DramaQA, TVQA, and How2QA)
 please request to wschoi@bi.snu.ac.kr
